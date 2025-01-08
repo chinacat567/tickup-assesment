@@ -28,7 +28,7 @@ jobs:
 
     # Run placeholder tests
     - name: Run Tests
-      run: echo "No tests available - Placeholder step"
+      run: python manage.py test
 
     # Build and run Docker containers
     - name: Build and Deploy Docker Containers
