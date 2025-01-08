@@ -25,7 +25,7 @@ docker-compose up
 ```
 ### Step 3: CI/CD Pipeline
 - Make changes to the repo and push it to main
-- The app would be deployed using docker and tests would be run
+- The app would be deployed using docker and 1 test would be run. This test just checks the view returned by the server.
 
 ### Step 4: Monitoring script
 - Run the monitoring script to check if the container is running
