@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  webapp:
+    build:
+      context: .
+    container_name: django-webapp
+    ports:
+      - "8000:8000"
+    networks:
+      - django-network
+    volumes:
+      - .:/app  # Mount local files for development
+
+networks:
+  django-network:
+    driver: bridge
